@@ -1,0 +1,176 @@
+<article>
+  <section>
+    <div class="container">
+      <div class="section-1-a">
+        <div class="main">
+          <div class="left">
+            <h3>CSO Self-Service Compliance Platform</h3>
+
+            <p>
+              Get compliant to benefit from International Support Organizations
+            </p>
+
+            <div><button>GET STARTED</button><button>REGISTER CSO</button></div>
+          </div>
+          <div class="right"></div>
+        </div>
+        <ng-container>
+          <div class="crplogin">
+            <div class="container">
+              <div class="left">
+                <img src="/assets/images/program/logo.png" alt="logo" />
+                <h3>WELCOME TO CSO SELF-SERVICE COMPLIANCE</h3>
+              </div>
+              <div class="right">
+                <h3>Log In</h3>
+
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                  <label>Email</label>
+                  <input type="text" pInputText formControlName="email" />
+
+                  <label>Password</label>
+                  <input
+                    type="password"
+                    pInputText
+                    formControlName="password"
+                  />
+
+                  <div class="form-view">
+                    <div class="form-remember">
+                      <p-checkbox
+                        name="groupname"
+                        value="rememberme"
+                        formControlName="remember"
+                      ></p-checkbox>
+
+                      <span> Remember Me </span>
+                    </div>
+                    <div>
+                      <a>Forgot Password?</a>
+                    </div>
+                  </div>
+                  <div class="section-1-rightbox-social">
+                    <button
+                      pButton
+                      type="submit"
+                      label="log in"
+                      class="log-in"
+                    ></button>
+                  </div>
+
+                  <div class="socials">
+                    <button class="googlebtn">
+                      <img src="/assets/images/gmail.png" alt="gmail" />
+                    </button>
+                  </div>
+
+                  <div class="member" routerLink="user-registration">
+                    <span>Not a member?</span> Sign up
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="section-2-left">
+        <h4>WATCH VIDEOS ABOUT THE SELF-SERVICE COMPLIANCE PLATFORM</h4>
+        <p>click on the player to view</p>
+      </div>
+      <div class="section-2-right">
+        <img
+          src="/assets/images/section2img.png"
+          alt=""
+          class="section-2-right-img"
+        />
+        <img
+          src="/assets/images/playicon.png"
+          alt="playbutton"
+          class="playbutton"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container flex">
+      <h3>Programmes</h3>
+      <div>
+        <p-carousel
+          [value]="program"
+          styleClass="custom-carousel"
+          [numVisible]="1"
+          [numScroll]="3"
+          [circular]="true"
+          [showNavigators]="true"
+          [autoplayInterval]="3000"
+          [responsiveOptions]="responsiveOptions"
+        >
+          <ng-template let-program pTemplate="item" class="carouselclass">
+            <h3>{{ program.name }}</h3>
+            <div class="program">
+              <img
+                src="assets/images/program/{{ program.image }}"
+                [alt]="program.name"
+                class="program-image"
+              />
+              <div class="program-detail">
+                <h3>Child Education</h3>
+                <p>
+                  rit nunc vel sapien. In habitasse at diam suspendisse non
+                  ndae, corporis aspernatur accusamus nemo modi fugit! Dolore
+                  odit fugiat sequi quidem beatae? yyyyyyyyyyyyyyyyyyyyyyyyy
+                </p>
+              </div>
+            </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h3>Official tracking partner of</h3>
+      <div class="partner-card">
+        <div>
+          <img src="/assets/images/program/partner1.png" alt="eu" />
+          <img
+            src="/assets/images/program/partner2.png"
+            alt="british-council"
+          />
+          <img src="/assets/images/program/partner3.png" alt="acdt" />
+          <img src="/assets/images/program/partner4.png" alt="osiwa" />
+          <img src="/assets/images/program/partner5.png" alt="foodbasket" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="left">
+        <img src="/assets/images/program/home-section.png" alt="" />
+      </div>
+      <div class="right">
+        <h3>Curious to Learn More? Stay Tuned</h3>
+        <p>
+          You let us know whenever you want us to update anything or think
+          something can be optimized.
+        </p>
+        <div class="inbox-container">
+          <div class="inbox">
+            <i class="bx bx-envelope"></i>
+
+            <input type="text" />
+          </div>
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>

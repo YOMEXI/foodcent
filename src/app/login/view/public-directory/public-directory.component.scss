@@ -1,0 +1,61 @@
+.fontsize {
+  color: black;
+  border-radius: 15px;
+}
+.paddinginput {
+  margin: 20px;
+}
+.bck {
+  color: #4690ff;
+}
+.line {
+  display: flex;
+  background: #4690ff;
+  color: #4690ff;
+  justify-content: center;
+}
+hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  width: 264px;
+}
+.center {
+  top: 50%;
+}
+
+.back {
+  background-color: rgb(114, 71, 131);
+}
+
+.back-milk {
+  background-color: chartreuse;
+}
+
+.sideside {
+  border-left: 1px solid #fff;
+}
+
+.main {
+  top: 50%;
+  left: 50%;
+}
+
+.backagain {
+  background: linear-gradient(
+    140.82deg,
+    rgba(16, 181, 203, 0.71) -0.99%,
+    rgba(26, 16, 78, 0.71) 90.38%
+  );
+  border-radius: 0%;
+}
+
+button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background: linear-gradient(107.38deg, #10b5cb -9.07%, #1a104e 143.29%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

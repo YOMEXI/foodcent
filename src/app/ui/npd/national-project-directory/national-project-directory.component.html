@@ -1,0 +1,75 @@
+<article>
+  <section>
+    <div class="container">
+      <div class="search">
+        <img src="assets/images/program/Search.png" alt="" />
+        <input type="text" placeholder="Search Thematic" />
+      </div>
+      <div class="search">
+        <img src="assets/images/program/location.png" alt="" />
+        <input type="text" placeholder="Location" />
+      </div>
+      <div class="search">
+        <img src="assets/images/program/calender.png" alt="" />
+        <input type="text" placeholder="Year of establishment" />
+      </div>
+    </div>
+  </section>
+  <section>
+    <button>Search</button>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="left">
+        <span> Search Result: 2 </span>
+      </div>
+
+      <div class="right">
+        <div class="dropdown">
+          <p-dropdown
+            [options]="names"
+            [(ngModel)]="selectedCity"
+            optionLabel="name"
+          ></p-dropdown>
+
+          <img src="assets/images/program/square.png" alt="" />
+
+          <img src="assets/images/program/menu.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="left">
+        <h3>Arewa Youth Council (Abuja Zone)</h3>
+
+        <div class="main">
+          <div class="left">
+            <p>
+              Plot 12, Abdul Maigari Street, Golden Lights Estate, Wuse, ABUJA
+            </p>
+            <div>
+              <div class="info">
+                <img src="assets/images/program/location.png" alt="" />
+                <span>Abuja</span>
+              </div>
+              <div class="info">
+                <img src="assets/images/program/calender.png" alt="" />
+                <span>1995</span>
+              </div>
+              <div class="info-2">
+                Thematics: <span>Youth Development | Youth Empowerment</span>
+              </div>
+              <button>View Details</button>
+            </div>
+          </div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </section>
+</article>

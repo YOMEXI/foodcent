@@ -1,0 +1,55 @@
+
+<div class="layout-topbar">
+    <div class="layout-topbar-logo">
+        <a href="/">
+            <img class="topbar-logo-image" src="assets/topbar-logo.svg" alt="logo">
+        </a>
+         <span><span style="color: #5D5FEF; font-weight: 600;">CSO </span>Regulatory Platform</span>
+    </div>
+
+    <button class="p-link layout-topbar-menu-button layout-topbar-button1 p-trigger" (click)="layoutService.showProfileSidebar()">
+        <i class="pi pi-ellipsis-v"></i>
+    </button>
+
+    <div class="layout-topbar-menu" [ngClass]="{'layout-topbar-menu-mobile-active': layoutService.state.profileSidebarVisible}">
+
+        
+        <button class="p-link layout-topbar-button">
+            <i class="pi pi-home"></i>
+            <span>Home</span>
+        </button>
+        
+        <button class="p-link layout-topbar-button">
+            <i class="pi pi-map"></i>
+            <span>About CRP</span>
+        </button>
+
+        <button class="p-link layout-topbar-button">
+            <i class="pi pi-book"></i>
+            <span>Bulletin</span>
+        </button>
+
+        <button class="p-link layout-topbar-button">
+            <i class="pi pi-list"></i>
+            <span>FAQs</span>
+        </button>
+        
+        <!-- <div class="topbar-search-input">
+            <span class="p-float-label p-input-icon-left">
+                <i class="pi pi-search"></i>
+                <input type="text" id="inputtext-left" pInputText > 
+                <label for="inputtext-left">Search</label>
+            </span>
+            
+        </div> -->
+    </div>
+    <div class="topbar-search-input">
+        <span class="p-float-label p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input type="text" id="inputtext-left" pInputText class="topbar-search-input-field" > 
+            <label for="inputtext-left">Search</label>
+        </span>
+        
+    </div>
+
+</div>
